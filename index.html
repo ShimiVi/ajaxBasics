@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX basics</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body dir="rtl">
+    <main class="container">
+    <h1>רשימת משימות (AJAX + jQuery)</h1>
+    <section class="controls">
+        <button id="load">טען משימות</button>
+        <span id="status" class="status"></span>
+    </section>
+
+    <ul id="list" class="list">
+        <!-- כאן נריץ משימות-->
+    </ul>
+
+    <h3>הוספת משימה</h3>
+    <form id="todo-form" class="form">
+        <input name="title" type="text" placeholder="כותרת רשימה" required> 
+        <button type="submit">הוסף</button>
+    </form>
+
+    <br> 
+
+    <h3>עדכון משימה</h3>
+    <form id="update-form" class="form">
+        <input type="number" id="update-id" placeholder="מספר רשימה" required> 
+        <input type="text" id="update-title" placeholder= "כותרת חדשה" required>
+        <button type="submit">עדכן</button> 
+    </form>
+    </main>
+
+
+
+    <script src="assets/js/app.js"></script>
+
+    </body>
+</html>
